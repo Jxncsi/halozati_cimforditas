@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <title>A hálózati címfordítás</title>
 </head>
 
 <body>
-  <div id="content" class="frame">
-    <h1>A hálózati címfordítás*</h1>
+  <div id="content">
+    <h1>A hálózati címfordítás<a href="https://hu.wikipedia.org/wiki/Hálózati_címfordítás">*</a></h1>
 
-    <p>A hálózati címfordítás (angolul Network Address Translation, röviden NAT) a csomagszűrő tűzfalak, illetve a
+    <p>A hálózati címfordítás (angolul <b>Network Address Translation</b>, röviden <b>NAT</b>) a csomagszűrő tűzfalak, illetve a
     címfordításra képes hálózati eszközök (pl. router) kiegészítő szolgáltatása, mely lehetővé teszi a belső hálózatra
     kötött gépek közvetlen kommunikációját tetszőleges protokollokon keresztül külső gépekkel anélkül, hogy azoknak
     saját nyilvános IP-címmel kellene rendelkezniük. Címfordításra akár egyetlen számítógép is képes, így valósítható
@@ -21,10 +22,13 @@
     használható címek összessége így még kevesebb. A gépek hálózati kártyái egynél több címet is felvehetnek egyszerre
     ha kell, illetve nemcsak a számítógépeknek, hanem szinte az összes fontosabb hálózati eszköznek is szüksége van
     legalább egy címre. Belátható, hogy így a soknak tűnő 4 milliárd cím világviszonylatban már sajnos kevés.</p>
+
+    <img class="frame" src="ipv4fogyas.png" >
+
     <h2>Működése</h2>
 
-    <p>A hálózati címfordító a belső gépekről érkező csomagokat az internetre továbbítás előtt úgy módosítja, hogy azok
-    feladójaként saját magát tünteti fel, így az azokra érkező válaszcsomagok is hozzá kerülnek majd továbbításra,
+    <p>A hálózati címfordító a belső gépekről érkező csomagokat az internetre továbbítás előtt úgy <b>módosítja, hogy azok
+    feladójaként saját</b> magát tünteti fel, így az azokra érkező válaszcsomagok is hozzá kerülnek majd továbbításra,
     amiket – a célállomás címének módosítása után – a belső hálózaton elhelyezkedő eredeti feladó részére ad át. Ebből
     kifolyólag ez minden esetben egy aktív hálózati eszközt igényel, amely folyamatosan figyeli az érkező csomagokat és
     azok feladói és címzettjei alapján elvégzi a szükséges módosításokat. Ez többnyire egy tűzfal, amely megfelelően
